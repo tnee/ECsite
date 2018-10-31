@@ -19,10 +19,10 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 		session.put("total_price",intCount * intPrice);
 		String payment;
 		if(pay.equals("1")){
-			payment="現金払ぁE;
+			payment="現金払い";
 			session.put("pay",payment);
 		}else{
-			payment="クレジチE��カーチE;
+			payment="クレジットカード";
 			session.put("pay", payment);
 		}
 		return result;
